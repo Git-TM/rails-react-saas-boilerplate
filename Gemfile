@@ -42,6 +42,10 @@ group :development, :test do
 end
 
 group :development do
+  gem "rails-erd"
+end
+
+group :development do
   gem "web-console"
   gem "letter_opener"
   gem "better_errors"

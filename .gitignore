@@ -35,3 +35,20 @@
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+
+# Vite
+dist/
+.vite/
+
+# Build artifacts
+/public/vite*
+/app/assets/builds/*
+
+# ERD files (optionnel si vous voulez les ignorer)
+erd.pdf
+erd.png

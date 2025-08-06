@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "Rails React SaaS Boilerplate"
+  },
+  "nav": {
+    "welcome": "Bienvenue, {{ name }} !",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "S'inscrire"
+  },
+  "pages": {
+    "home": {
+      "title": "Accueil",
+      "welcome": "Bienvenue sur Rails React SaaS Boilerplate",
+      "description": "Un boilerplate moderne full-stack avec Rails 8, React, Inertia.js et Tailwind CSS.",
+      "get_started": "Commencer",
+      "sign_in": "Se connecter",
+      "dashboard": "Tableau de bord",
+      "logged_in_as": "Connecté en tant que {{ email }}"
+    },
+    "auth": {
+      "login": {
+        "title": "Connexion",
+        "email": "Email",
+        "password": "Mot de passe",
+        "submit": "Se connecter",
+        "forgot_password": "Mot de passe oublié ?",
+        "no_account": "Pas de compte ?",
+        "register_link": "S'inscrire"
+      },
+      "register": {
+        "title": "Créer un compte",
+        "email": "Email",
+        "password": "Mot de passe",
+        "password_confirmation": "Confirmer le mot de passe",
+        "submit": "Créer un compte",
+        "have_account": "Déjà un compte ?",
+        "login_link": "Se connecter"
+      }
+    }
+  }
+} 
