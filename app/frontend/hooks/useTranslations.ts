@@ -1,40 +1,21 @@
-import { usePage } from '@inertiajs/react'
-
-interface PageProps {
-  translations: Record<string, any>
-  locale: string
-}
+// Import des traductions français
+import frTranslations from '../../../config/locales/frontend/fr.json'
 
 export function useTranslations() {
-  const { props } = usePage<PageProps>()
-  const { translations = {}, locale = 'en' } = props
-
-  const t = (key: string, params?: Record<string, string | number>): string => {
+  const t = (key: string): string => {
     const keys = key.split('.')
-    let value = translations
+    let value: any = frTranslations
 
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
         value = value[k]
       } else {
-        return key // Return key if translation not found
+        return key // Return key if not found
       }
     }
 
-    if (typeof value !== 'string') {
-      return key
-    }
-
-    // Simple interpolation
-    if (params) {
-      return Object.entries(params).reduce(
-        (str, [param, val]) => str.replace(new RegExp(`{{\\s*${param}\\s*}}`, 'g'), String(val)),
-        value
-      )
-    }
-
-    return value
+    return typeof value === 'string' ? value : key
   }
 
-  return { t, locale }
+  return { t }
 } 

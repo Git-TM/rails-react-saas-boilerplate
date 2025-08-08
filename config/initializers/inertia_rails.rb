@@ -1,14 +1,6 @@
+# frozen_string_literal: true
+
 InertiaRails.configure do |config|
-  # Set the root template that's loaded on the first page visit
-  config.layout = 'application'
-
-  # Set the default page title
-  config.default_render = true
-
-  # Set the version
+  config.ssr_enabled = ViteRuby.config.ssr_build_enabled
   config.version = ViteRuby.digest
-
-  # Configure SSR
-  config.ssr_enabled = false
-  config.ssr_url = 'http://localhost:13714'
-end 
+end

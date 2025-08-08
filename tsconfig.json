@@ -21,9 +21,9 @@
   },
   "include": [
     "app/frontend/**/*",
-    "vite.config.ts"
+    "vite.config.mts"
   ],
   "exclude": [
     "node_modules"
   ]
-} 
+}

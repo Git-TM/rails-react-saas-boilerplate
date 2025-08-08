@@ -38,5 +38,9 @@ module RailsReactSaasBoilerplate
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Force French locale
+    config.i18n.default_locale = :fr
+    config.i18n.locale = :fr
   end
 end
