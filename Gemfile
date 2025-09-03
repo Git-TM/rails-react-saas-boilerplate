@@ -3,7 +3,7 @@ ruby "3.3.4"
 
 gem "rails", "~> 8.0.0"
 gem "propshaft"
-gem "pg", "~> 1.1"
+gem "pg", "~> 1.6"
 gem "puma", ">= 5.0"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
